@@ -4352,20 +4352,20 @@ app.post("/send-message", upload.single("file"), async (req, res) => {
         });
 
         // for production
-        // res.cookie("token", token, {
-        //   httpOnly: true,
-        //   secure: process.env.NODE_ENV === "production",
-        //   sameSite: "none",
-        // maxAge: 7 * 24 * 60 * 60 * 1000,
-        // })
+        res.cookie("token", token, {
+          httpOnly: true,
+          secure: process.env.NODE_ENV === "production",
+          sameSite: "none",
+        maxAge: 7 * 24 * 60 * 60 * 1000,
+        })
         // for dev....
-        res
-          .cookie("token", token, {
-            httpOnly: true,
-            secure: process.env.NODE_ENV === "production" ? true : false,
-            sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
-            maxAge: 24 * 60 * 60 * 1000,
-          })
+        // res
+        //   .cookie("token", token, {
+        //     httpOnly: true,
+        //     secure: process.env.NODE_ENV === "production" ? true : false,
+        //     sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
+        //     maxAge: 24 * 60 * 60 * 1000,
+        //   })
 
           .send({ success: true });
       } catch (error) {
