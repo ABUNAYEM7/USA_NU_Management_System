@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+    --color-highlight: #54304d; 
+    --color-prime: #9fdee8; 
+  }

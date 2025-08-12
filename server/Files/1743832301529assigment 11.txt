@@ -1,0 +1,70 @@
+
+Here’s an easy-to-understand summary and a basic structure for your Marathon Management System project:
+
+How Your Website Will Look Like
+Your website will have the following sections:
+
+Navbar:
+
+Before Login:
+Logo on the left.
+Links on the right: Marathons, Login, Register.
+After Login:
+Logo on the left.
+Links on the right: Marathons, Dashboard, User Avatar, Logout.
+Home Page:
+
+Banner Section: A carousel (slider) with at least three images and text about marathon events.
+Marathon Section: Displays 6 marathon cards with basic details like title, location, and registration dates. Each card has a "See Details" button.
+Upcoming Marathons Section: Highlights six upcoming events with their details (static).
+Extra Sections: Add 2 meaningful sections, e.g., testimonials or event statistics.
+Footer:
+
+Website logo/name.
+Short description.
+Copyright info.
+Links to important pages.
+Login/Register Pages:
+
+Login Page: Allows users to log in using email/password or Google/GitHub. Error messages (if login fails) are displayed using notifications.
+Register Page: Users register with their name, email, photo, and password. Passwords must meet specific criteria (e.g., uppercase, lowercase, 6+ characters). Success and error messages are shown.
+Dashboard (Private):
+
+Add Marathon Page: A form to create a marathon with details like title, location, dates, and an image.
+My Marathon List: A table displaying marathons the user has created, with options to update or delete them.
+My Apply List: A table showing the marathons the user has registered for, with options to update or delete their registration.
+Other Pages:
+
+Marathons Page: Displays all marathons in a grid. Clicking “See Details” shows full information about the marathon.
+Marathon Details Page: Provides detailed information about a marathon, including a register button (if registration is open).
+404 Page: A custom "Page Not Found" screen for invalid routes.
+Spinner: Shows when data is loading.
+How Your Website Will Work
+Home Page: The first page users see, showcasing marathons and upcoming events.
+Login/Register: Users log in or register to access personalized features.
+Dashboard: Once logged in, users can:
+Add new marathons.
+View or manage marathons they created.
+See a list of marathons they’ve registered for.
+Marathon Details: Allows users to see detailed information and register for events.
+Responsive Design: Works seamlessly on mobile, tablet, and desktop devices.
+Dynamic Titles: Changes the page title based on the route (e.g., "Home," "My Marathons").
+Basic Structure of the Website
+Header/Navbar
+
+Dynamic based on login status.
+Main Content (Dynamic Routes)
+
+/: Home Page (Banner, Marathons, Upcoming Marathons).
+/login: Login Page.
+/register: Registration Page.
+/dashboard/add-marathon: Form to add new marathons (Private).
+/dashboard/my-marathons: Table of created marathons (Private).
+/dashboard/my-applies: Table of applied marathons with search (Private).
+/marathons: List of all marathons.
+/marathons/:id: Details of a specific marathon.
+/*: 404 Page.
+Footer
+
+Common across all pages.
+website routes.
