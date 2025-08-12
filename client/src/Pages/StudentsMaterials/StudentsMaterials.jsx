@@ -44,6 +44,7 @@ const StudentsMaterials = () => {
     return <p className="text-center py-6">Loading materials...</p>;
   }
 
+
   return (
     <div className="p-4">
       <h2 className="text-xl font-bold mb-4">
@@ -70,10 +71,7 @@ const StudentsMaterials = () => {
                   <td className="px-4 py-2 border">{material.email}</td>
                   <td className="px-4 py-2 border">
                     <a
-                      href={`http://localhost:3000/files/${material.filename.replace(
-                        /\\/g,
-                        "/"
-                      )}`}
+                      href={material?.firebaseUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-green-600 hover:underline"

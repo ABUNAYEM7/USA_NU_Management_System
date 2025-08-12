@@ -85,7 +85,7 @@ const SignUp = () => {
             };
             // post data in db
             const res = await axios.post(
-              `http://localhost:3000/users`,
+              `https://usa-nu-management-system.onrender.com/users`,
               userData
             );
             if (res?.data?.insertedId) {
@@ -107,7 +107,7 @@ const SignUp = () => {
         console.log(err);
       }
       setError(err.message.split("/")[1] || err.code || "Invalid Credentials");
-          setSubmitting(false)
+      setSubmitting(false);
     }
   };
 

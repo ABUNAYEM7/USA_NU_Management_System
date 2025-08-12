@@ -398,7 +398,7 @@ const ViewUserDetails = () => {
                     <td>
                       {assignment.path ? (
                         <a
-                          href={`http://localhost:3000/${assignment?.path?.replace(
+                          href={`https://usa-nu-management-system.onrender.com/${assignment?.path?.replace(
                             /\\/g,
                             "/"
                           )}`}
@@ -489,7 +489,7 @@ const ViewUserDetails = () => {
                     <td>
                       {material.path ? (
                         <a
-                          href={`http://localhost:3000/${material.path.replace(
+                          href={`https://usa-nu-management-system.onrender.com/${material.path.replace(
                             /\\/g,
                             "/"
                           )}`}
@@ -505,7 +505,7 @@ const ViewUserDetails = () => {
                     </td>
                     <td className="flex gap-2">
                       <a
-                        href={`http://localhost:3000/${material.path.replace(
+                        href={`https://usa-nu-management-system.onrender.com/${material.path.replace(
                           /\\/g,
                           "/"
                         )}`}
